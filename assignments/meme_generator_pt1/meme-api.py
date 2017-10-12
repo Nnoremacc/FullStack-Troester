@@ -300,7 +300,7 @@ def meme(action = None):
         count = client['memes_db']['memes'].find().count()
         
         #counter to help keep track
-        max_id = count + 1
+        max_id = count+= 1
         
         #for loop to find the key value pair
         for key, value in request.form.items():
