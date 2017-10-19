@@ -330,7 +330,8 @@
                 name = $('#picName').val()
                 console.log(url);
                 console.log(name);
-                url = "http://localhost:5050/meme_generator/v1.0/grab_image?url=" + url + "&" + "fname=" + name
+                var end = url + "&" + "fname=" + name;
+                url = "http://localhost:5050/meme_generator/v1.0/grab_image?url=" + end
                 function image_success(response) {
                     console.log(response);
                     $('#getImageForm').remove()
